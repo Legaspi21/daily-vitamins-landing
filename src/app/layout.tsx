@@ -16,8 +16,26 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: 'Daily Vitamins',
-  description: 'Building better kids, one habit at a time.',
+  title: 'Daily Vitamins – Building Better Kids, One Habit at a Time',
+  description:
+    'Daily Vitamins helps parents and coaches turn habits into streaks for kids. Join the waitlist.',
+  metadataBase: new URL('https://dailyvitamins.app'),
+  openGraph: {
+    title: 'Daily Vitamins – Coming Soon',
+    description:
+      'Daily Vitamins helps parents and coaches turn habits into streaks for kids.',
+    url: 'https://dailyvitamins.app',
+    siteName: 'Daily Vitamins',
+    images: [{ url: '/og.png', width: 1200, height: 630, alt: 'Daily Vitamins' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Daily Vitamins – Coming Soon',
+    description: 'Daily Vitamins helps parents and coaches turn habits into streaks for kids.',
+    images: ['/og.png'],
+  },
+  icons: { icon: '/icon.png' },
 };
 
 export default function RootLayout({
@@ -27,7 +45,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} font-body bg-background text-app-text antialiased`}>
+      <body
+        className={`${inter.variable} ${spaceGrotesk.variable} font-body bg-background text-app-text antialiased`}
+      >
         {children}
       </body>
     </html>
