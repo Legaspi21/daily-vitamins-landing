@@ -21,7 +21,7 @@ export default function PhoneMockup({ src, alt, className = '' }: Props) {
               alt={alt}
               width={400}
               height={867}
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover object-bottom"
               priority
             />
           </div>
