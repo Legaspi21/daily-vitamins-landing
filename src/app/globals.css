@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #4F46E5;
+  --color-primary-light: #818CF8;
+  --color-primary-dark: #3730A3;
+  --color-secondary: #F59E0B;
+  --color-secondary-light: #FCD34D;
+  --color-success: #10B981;
+  --color-background: #F9FAFB;
+  --color-surface: #FFFFFF;
+  --color-app-text: #111827;
+  --color-text-secondary: #6B7280;
+  --color-text-muted: #9CA3AF;
+  --color-border: #E5E7EB;
+
+  /* Typography */
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Border radius */
+  --radius-app: 12px;
+  --radius-app-xl: 16px;
+
+  /* Shadows */
+  --shadow-card: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-card-lg: 0 8px 32px rgba(0,0,0,0.12);
+}
+
+@layer base {
+  :root {
+    --font-heading: var(--font-space-grotesk-loaded, 'Space Grotesk', sans-serif);
+    --font-body: var(--font-inter-loaded, 'Inter', sans-serif);
+  }
+}
