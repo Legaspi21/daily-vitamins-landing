@@ -52,6 +52,7 @@ export const metadata: Metadata = {
   },
   icons: { icon: '/icon.png' },
   robots: { index: true, follow: true },
+  verification: { google: '9txCapIjdjgKqubzYm08hkdzfkN-ijDEZLPv1gtcCbI' },
 };
 
 const jsonLd = {
