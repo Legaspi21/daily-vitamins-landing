@@ -21,6 +21,7 @@ export default function PhoneMockup({ src, alt, className = '' }: Props) {
             width={400}
             height={867}
             className="w-full h-full object-contain"
+            style={{ paddingTop: '24px', paddingBottom: '8px' }}
             priority
           />
         </div>
