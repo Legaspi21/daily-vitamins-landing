@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="bg-surface border-t border-border py-8 px-4">
@@ -7,9 +9,9 @@ export default function Footer() {
           <span>© {new Date().getFullYear()}</span>
         </div>
         <div className="flex items-center gap-6">
-          <a href="https://dailyvitamins.app/privacy" className="hover:text-primary transition">
+          <Link href="/privacy" className="hover:text-primary transition">
             Privacy Policy
-          </a>
+          </Link>
           <span className="text-text-muted">Building better kids, one habit at a time.</span>
         </div>
       </div>
